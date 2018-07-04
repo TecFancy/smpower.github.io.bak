@@ -346,36 +346,22 @@
       
         
           
-            <h2 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h2><ol>
-<li><p>创建用户</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">mysql&gt;</span> insert into mysql.user(Host,User,Password) values('localhost','admin',password('admin'));</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>刷新系统权限表</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">mysql&gt;</span> flush privileges;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="在-root-权限下创建数据库"><a href="#在-root-权限下创建数据库" class="headerlink" title="在 root 权限下创建数据库"></a>在 root 权限下创建数据库</h2><ol>
-<li><p>创建数据库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">mysql&gt;</span> create database mydb;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>授权 admin 用户用户 mydb 数据库的所有权</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant all privileges on mydb.* to admin@localhost identified by 'admin';</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>刷新系统权限表</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">mysql&gt;</span> flush privileges;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h2><ol>
-<li><p>删除用户</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@&gt;</span> mysql -uroot -p</span><br><span class="line"><span class="meta">@&gt;</span> password</span><br><span class="line"><span class="meta">mysql&gt;</span> DELETE FROM user WHERE User='admin' and Host='localhost';</span><br><span class="line"><span class="meta">mysql&gt;</span> flush priviledges;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除用户的数据库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">mysql&gt;</span> DROP DATABASE mydb;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="修改指定用户的密码"><a href="#修改指定用户的密码" class="headerlink" title="修改指定用户的密码"></a>修改指定用户的密码</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@&gt;</span> mysql -uroot -p</span><br><span class="line"><span class="meta">@&gt;</span> password</span><br><span class="line"><span class="meta">mysql&gt;</span> update mysql.user set password=password('new password') where User='admin' and Host = 'localhost';</span><br><span class="line"><span class="meta">mysql&gt;</span> flush privileges;</span><br></pre></td></tr></table></figure>
+          创建用户
+创建用户
+1mysql&gt; insert into mysql.user(Host,User,Password) values('localhost','admin',password('admin'));
 
-          
+刷新系统权限表
+1mysql&gt; flush privileges;
+
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/04/Linux-Debian9-安装mariaDB后的初始设置/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
