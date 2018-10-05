@@ -1,3 +1,3 @@
-import view from './views/home.js';
+import view from './views/home';
 
 export {view};
