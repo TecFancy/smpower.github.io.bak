@@ -3,30 +3,72 @@ import PropTypes from 'prop-types';
 
 import './style.css';
 
-class Header extends React.Component {
-  render() {
-    console.log(this.context.store.getState().header);
-    return (
-      <div className="header">
-	<div className="header-inner">
-	  <div className="header-inner-logo">
-	    Site's title
-	  </div>
-	  <div className="header-inner-buttons">
-	    <span>home</span>
-	    <span>tags</span>
-	    <span>categories</span>
-	    <span>archives</span>
-	    <span>about</span>
-	  </div>
-	</div>
+const Header = ({headerData}) => (
+  <div className="header">
+    <div className="header-inner">
+      <div className="header-inner-logo">
+	Site's title
       </div>
-    );
+      <div className="header-inner-buttons">
+	{
+	  headerData.map((item, index) => {
+	    return (
+	      <span
+	        key={index}
+	      >{item.page}</span>
+	    );
+	  })
+	}
+      </div>
+    </div>
+  </div>
+);
+
+Header.propTypes = {
+  headerData: PropTypes.array.isRequired
+};
+
+class HeaderContainer extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.getOwnState = this.getOwnState.bind(this);
+    this.onChange = this.onChange.bind(this);
+
+    this.state = this.getOwnState();
+  }
+
+  getOwnState() {
+    return {
+      header: this.context.store.getState().header
+    };
+  }
+
+  onChange() {
+    this.setState(this.getOwnState());
+  }
+
+  shouldComponentUpdate(nextState, nextProps) {
+    return true;
+  }
+
+  componentDidMount() {
+    this.setState({
+      unsubscribe: this.context.store.subscribe(this.onChange)
+    });
+  }
+
+  componentWillUnmount() {
+    this.state.unsubscribe(this.onChange);
+  }
+
+  render() {
+    return <Header headerData={this.state.header} />;
   }
 }
 
-Header.contextTypes = {
+HeaderContainer.contextTypes = {
   store: PropTypes.object
 };
 
-export default Header;
+export default HeaderContainer;

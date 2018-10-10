@@ -5,7 +5,8 @@ const navigation = [
   {page: 'tags'},
   {page: 'categories'},
   {page: 'archives'},
-  {page: 'about'}
+  {page: 'about'},
+  {page: 'resume'}
 ];
 
 export default (state = navigation, action) => {
