@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {NavLink} from 'react-router-dom';
 
 import './style.css';
 
@@ -13,9 +14,11 @@ const Header = ({headerData}) => (
 	{
 	  headerData.map((item, index) => {
 	    return (
-	      <span
-	        key={index}
-	      >{item.page}</span>
+	      <NavLink
+		key={index}
+	        exact={item.navLink.exact}
+		to={item.navLink.to}
+	      >{item.navLink.text}</NavLink>
 	    );
 	  })
 	}
