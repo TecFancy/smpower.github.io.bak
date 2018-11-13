@@ -1,7 +1,7 @@
 {
   "main.css": "/wundertodo/static/css/main.a6c90126.chunk.css",
-  "main.js": "/wundertodo/static/js/main.6afafbc6.chunk.js",
-  "main.js.map": "/wundertodo/static/js/main.6afafbc6.chunk.js.map",
+  "main.js": "/wundertodo/static/js/main.8bbda01a.chunk.js",
+  "main.js.map": "/wundertodo/static/js/main.8bbda01a.chunk.js.map",
   "static/js/1.2461b672.chunk.js": "/wundertodo/static/js/1.2461b672.chunk.js",
   "static/js/1.2461b672.chunk.js.map": "/wundertodo/static/js/1.2461b672.chunk.js.map",
   "runtime~main.js": "/wundertodo/static/js/runtime~main.cb1658b5.js",
@@ -9,6 +9,6 @@
   "static/media/style.css": "/wundertodo/static/media/name.1af8f340.svg",
   "static/css/main.a6c90126.chunk.css.map": "/wundertodo/static/css/main.a6c90126.chunk.css.map",
   "index.html": "/wundertodo/index.html",
-  "precache-manifest.64cbf30359894cb11d676c2f8a18f14b.js": "/wundertodo/precache-manifest.64cbf30359894cb11d676c2f8a18f14b.js",
+  "precache-manifest.feb28a852c329d100846252858fc639e.js": "/wundertodo/precache-manifest.feb28a852c329d100846252858fc639e.js",
   "service-worker.js": "/wundertodo/service-worker.js"
 }

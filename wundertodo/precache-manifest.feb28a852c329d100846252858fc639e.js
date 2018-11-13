@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "cf6c1fa869802380e714722bb58cf075",
-    "url": "/wundertodo/static/media/menu.cf6c1fa8.svg"
+    "revision": "9d7d92b3e2bb7c2bb97548a028f89eee",
+    "url": "/wundertodo/static/media/search.9d7d92b3.svg"
   },
   {
-    "revision": "6afafbc65e67fe304bf4",
+    "revision": "8bbda01ad033e0e5783c",
     "url": "/wundertodo/static/css/main.a6c90126.chunk.css"
   },
   {
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/wundertodo/static/media/password.d2c70c69.svg"
   },
   {
-    "revision": "6afafbc65e67fe304bf4",
-    "url": "/wundertodo/static/js/main.6afafbc6.chunk.js"
+    "revision": "8bbda01ad033e0e5783c",
+    "url": "/wundertodo/static/js/main.8bbda01a.chunk.js"
   },
   {
-    "revision": "9d7d92b3e2bb7c2bb97548a028f89eee",
-    "url": "/wundertodo/static/media/search.9d7d92b3.svg"
+    "revision": "cf6c1fa869802380e714722bb58cf075",
+    "url": "/wundertodo/static/media/menu.cf6c1fa8.svg"
   },
   {
     "revision": "8c9ecaaee51462ec5ef5c206e4fd7693",
@@ -48,19 +48,19 @@ self.__precacheManifest = [
     "url": "/wundertodo/static/media/avatar.172af8a8.svg"
   },
   {
-    "revision": "61a2208c42f40f8ab125aa4d6b28740a",
-    "url": "/wundertodo/static/media/arrow-down.61a2208c.svg"
+    "revision": "89f383363cc8965aa73d9fa0da5b1a37",
+    "url": "/wundertodo/static/media/conversation.89f38336.svg"
   },
   {
     "revision": "b07b02dc16f6bc48c0db50749fb9bc24",
     "url": "/wundertodo/static/media/bell.b07b02dc.svg"
   },
   {
-    "revision": "89f383363cc8965aa73d9fa0da5b1a37",
-    "url": "/wundertodo/static/media/conversation.89f38336.svg"
+    "revision": "61a2208c42f40f8ab125aa4d6b28740a",
+    "url": "/wundertodo/static/media/arrow-down.61a2208c.svg"
   },
   {
-    "revision": "44274abb753fb5edd13b3800ca713a2b",
+    "revision": "0043126b0f8a5028405403701a960e88",
     "url": "/wundertodo/index.html"
   }
 ];
