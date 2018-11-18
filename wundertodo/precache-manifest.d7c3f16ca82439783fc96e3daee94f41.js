@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/wundertodo/static/media/menu.cf6c1fa8.svg"
   },
   {
-    "revision": "6daad23f69fc0ba55741",
-    "url": "/wundertodo/static/css/main.a6c90126.chunk.css"
+    "revision": "b78f520fd6a2d0328873",
+    "url": "/wundertodo/static/css/main.16f73893.chunk.css"
   },
   {
-    "revision": "2461b672902c9627dcb5",
-    "url": "/wundertodo/static/js/1.2461b672.chunk.js"
+    "revision": "5d82229706901d39756b",
+    "url": "/wundertodo/static/js/1.5d822297.chunk.js"
   },
   {
     "revision": "cb1658b5be278cf1e39d",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/wundertodo/static/media/password.d2c70c69.svg"
   },
   {
-    "revision": "6daad23f69fc0ba55741",
-    "url": "/wundertodo/static/js/main.6daad23f.chunk.js"
+    "revision": "b78f520fd6a2d0328873",
+    "url": "/wundertodo/static/js/main.b78f520f.chunk.js"
   },
   {
     "revision": "9d7d92b3e2bb7c2bb97548a028f89eee",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/wundertodo/static/media/conversation.89f38336.svg"
   },
   {
-    "revision": "d2fd890dd4b647068b5e28fc15dfe9df",
+    "revision": "2f6129470b4807e3ae193393f2b6c0fe",
     "url": "/wundertodo/index.html"
   }
 ];
